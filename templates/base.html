@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pepito Casino!</title>
+</head>
+
+<body style="background-color: black">
+    <div align="center" class="content">
+        <h2 style="color: white; font-family: dndfont">{{ surge }}</h2>
+        <div class="button">
+            <a class="btn btn-outline-danger" href=" {{ url_for('home') }}">Bring me chaos!</a>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<style>
+    .content {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        margin-bottom: 200px;
+        width: 500px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .button {
+        margin-top: 100px;
+    }
+
+    @font-face {
+        font-family: dndfont;
+        src: url('../static/fonts/hand.ttf');
+      }
+
+    *{ font-family: dndfont}
+</style>
